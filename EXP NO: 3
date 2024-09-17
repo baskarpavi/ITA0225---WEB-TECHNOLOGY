@@ -1,0 +1,48 @@
+HTML (index.html):
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <h2>Parent Element</h2>
+        <div class="child">
+            I am the child element
+        </div>
+    </div>
+</body>
+</html>
+
+CSS (style.css):
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Style for parent element */
+.parent {
+    width: 300px;
+    height: 200px;
+    background-color: #87cefa;
+    border: 2px solid #000;
+    padding: 20px;
+    position: relative; /* Relative to its original position in the document flow */
+}
+
+/* Style for child element */
+.child {
+    width: 150px;
+    height: 100px;
+    background-color: #ffcccb;
+    border: 2px solid #000;
+    position: relative; /* This is relative positioning */
+    top: 20px; /* Moves the element 20px down relative to its normal position */
+    left: 30px; /* Moves the element 30px to the right relative to its normal position */
+}
